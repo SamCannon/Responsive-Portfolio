@@ -1,0 +1,338 @@
+/*************************************************************
+**************************************************************
+**************Created by Sam Cannon 04/08/2017****************
+**************************************************************
+*************************************************************/
+
+html, body {
+	width: 1355px;
+	height: 750px;
+	margin: auto;
+	padding: 0px;
+	background-color: #000;
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	vertical-align: middle;
+}
+
+	body {
+		padding-top: 80px;
+	}
+
+	/***************************************************************************************
+	***************
+	header elements
+	***************
+	***************************************************************************************/
+
+	header {
+		width: 100%;
+		height: 90px;
+		margin: auto;
+		padding: 0px;
+		background-color: #ffffff;
+		border-bottom: medium solid #cccccc;
+	}
+
+		#namePlate {
+			width: 250px;
+			height: 90px;
+			background-color: #4aaaa5;
+			margin: 0px;
+			padding: 0px;
+			float: left;
+			position: relative;
+			left: 155px;
+		}
+
+			h1 {
+				background-color: #4aaaa5;
+				color: white;
+				margin: 10% 0px;
+				padding: 0px;
+				font-size: 2em;
+				font-weight: bold;
+				text-align: center;
+			}
+
+		#navBar {
+			width: auto;
+			margin: 0px;
+			padding: 0px;
+			float: right;
+			position: relative;
+			right: 240px;
+			top: 40px;
+		}
+
+			#but1, #but2 {
+				width: 33%;
+				height: 100%;
+				padding: 0px 15px 0px 15px;
+				background-color: #fff;
+				color: #777777;
+				font-size: 1.1em;
+				border: none;
+				border-right: thin solid #000;
+				float: left;
+			}
+
+			#but3 {
+				width: 33%;
+				height: 100%;
+				padding: 0px 15px 0px 15px;
+				background-color: #fff;
+				color: #777777;
+				font-size: 1.1em;
+				border: none;
+				float: left;
+			}
+
+				button:hover {
+					color: cyan;
+					box-shadow: 0px 7px 7px lightgray;
+				}
+
+/*******************************************************************************************
+*********************
+main content elements
+*********************
+*******************************************************************************************/
+
+	main {
+		width: 100%;
+		height: 570px;
+		margin: auto;
+		padding: 0px;
+		background-color: lightgray;
+	}
+
+		#content  {
+			width: 650px;
+			height: 480px;
+			margin: 0px 45px 0px 0px;
+			padding: 0px;
+			background-color: white;
+			float: left;
+			position: relative;
+			left: 11.62%;
+			top: 6.1%;
+		}
+
+		#content::after {
+		    content: "";
+		    clear: both;
+		    display: table;
+		}
+
+			#selfie {
+				float: left; 
+				padding: 0px 30px 30px 0px;"
+			}
+
+			#appHeader {
+				width: 92.3%;
+				height: auto;
+				margin: 0px auto;
+				padding: 0px;
+				border-bottom: medium solid #cccccc;
+			}
+
+			#app1, #app2, #app3, #app4, #app5 {
+				width: 265px;
+				height: 200px; 
+				margin: 0px;
+				padding: 0px;
+			}
+
+			#app1, #app3, #app5 {
+				margin: 30px 0px 20px 30px;
+				padding: 0px;
+				float: left;
+			}
+
+			#app2, #app4 {
+				margin: 30px 30px 20px 0px; 
+				float: right;
+			}
+
+				.appPic {
+					margin: 0px;
+					padding: 0px;
+					z-index: -1;
+				}
+
+				.appLabel {
+					width: 100%;
+					height: auto;
+					margin: 0px;
+					padding: 0px;
+				}
+
+			#contentH2 {
+				width: auto;
+				height: auto;
+				margin: 45px 0px 10px 30px;
+				padding: 0px;
+				color: #4aaaa5;
+				font-size: 2em;
+				font-weight: bold;
+			}
+
+			#contentPara {
+				width: 590px;
+				margin: 0px auto;
+				border-top: medium solid #dddddd;
+			}
+
+			textarea {
+				resize: width;
+				min-width: 450px;
+			}
+
+/*******************connect content section********************************/
+
+		#connect  {
+			width: 270px;
+			height: 204px;
+			margin: 0px;
+			padding: 5px 0px;
+			background-color: white;
+			float: right;
+			position: relative;
+			right: 17.89%;
+			top:6.1%;
+			text-align: center;
+		}
+
+		#connect:after {
+		    content: "";
+		    clear: both;
+		    display: table;
+		}
+
+			#connectH2 {
+				margin: 0px auto;
+				padding: 0px;
+				padding-left: 15px;
+				color: #4aaaa5;
+				font-size: 1.5em;
+				font-weight: bold;
+			}
+
+			#conImg1, #conImg2, #conImg3 {
+				padding: 0px 10px 0px 10px
+			}
+
+/****************************************************************************
+***************
+footer elements
+***************
+****************************************************************************/
+
+
+	footer {
+		width: 100%;
+		height: 15%;
+		margin: auto;
+		padding: 0px;
+		background-color: #666666;
+		border-top: 9px solid #4aaaa5;
+		text-align: center;
+		color: #ffffff;
+	}
+
+		#foot {
+			margin-top: 2.5%;
+		}
+
+/*******************************************************************************
+*******************
+media query section
+*******************
+*******************************************************************************/
+
+@media only screen and (max-width: 980px) {
+    html, body {
+    	width: 100%;
+    	height: 100%;
+    	margin:0px;
+    	padding: 0px;
+    	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    }
+
+    main {
+    	width: 100%;
+
+    }
+
+    	#content {
+    		width: 420px;
+    		margin-right: 40px;
+    		position: relative;
+			right: 12.75%;
+    	}
+
+    		#contentPara {
+    			width: 77.9%;
+    		}
+
+    			#selfie {
+    				width: 84.52%;
+    			}
+
+    	#contact {
+    		margin-left: 40px;
+    		position: relative;
+			right: 13.26%
+    	}
+
+}
+
+/*********************/
+
+@media only screen and (max-width: 768px) {
+    html, body {
+    	width: 100%;
+    	height: 100%font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;		
+    }
+
+
+
+		main {
+			width: 767px;
+			margin: 0px;
+			padding: 0px;
+		}    
+
+		    #content {
+		    	width: 725px;
+		    	margin: auto;
+		    	padding: 0px;
+		    	position: unset;
+		    }
+
+		    #connect {
+				width: 725px;
+		    	margin: 20px auto;
+		    	padding: 0px;
+		    	position: unset;
+		    	float: left;
+		    	text-align: left;
+		    }
+
+		footer {
+			width: 100%;
+		}
+
+}
+
+
+@media only screen and (max-width: 640px) {
+    html, body {
+    	width: 100%;
+    	height: 100%;
+    	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+    }
+}
